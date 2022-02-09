@@ -18,6 +18,9 @@ public class Employee {
     private String name;
     private String gender;
     private int age;
+    private String address;
+    private Long salary;
+    private String email;
     private String imageURL;
     @CreationTimestamp
     private LocalDate dateCreated;

@@ -24,7 +24,7 @@ class EmployeeRecordApplicationTests {
 	private DataSource dataSource;
 
 	@Test
-	void valueExists() {
+	void valueExists(){
 		assertThat(testName).isEqualTo("EmployeeRecord");
 		log.info(testName);
 	}
