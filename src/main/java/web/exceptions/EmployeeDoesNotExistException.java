@@ -1,8 +1,9 @@
 package web.exceptions;
 
-public class EmployeeDoesNotExistException extends Throwable{
+public  class EmployeeDoesNotExistException extends Throwable{
 
-    public EmployeeDoesNotExistException(String message) {
+    public EmployeeDoesNotExistException(String message){
         super(message);
     }
+
 }

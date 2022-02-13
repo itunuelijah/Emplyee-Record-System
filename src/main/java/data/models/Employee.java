@@ -15,13 +15,16 @@ public class Employee {
     private Long id;
 
     @Column(unique = true, nullable = false)
-    private String name;
+    private String firstName;
+    @Column(unique = true, nullable = false)
+    private String lastName;
     private String gender;
-    private int age;
-    private String address;
+    private String  dateOfBirth;
     private Long salary;
     private String email;
-    private String imageURL;
+    private String phoneNumber;
+    private String address;
     @CreationTimestamp
-    private LocalDate dateCreated;
+    private LocalDate dateEmployed;
+    private String imageUrl;
 }
