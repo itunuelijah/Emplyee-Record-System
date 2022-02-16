@@ -1,4 +1,4 @@
-package web.controller;
+package com.employeeRecord.web.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
