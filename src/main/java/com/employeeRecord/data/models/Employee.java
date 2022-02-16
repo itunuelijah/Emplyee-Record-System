@@ -1,4 +1,4 @@
-package data.models;
+package com.employeeRecord.data.models;
 
 import lombok.Data;
 import org.hibernate.annotations.CreationTimestamp;
