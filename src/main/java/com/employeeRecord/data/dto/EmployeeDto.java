@@ -1,21 +1,17 @@
-package data.dto;
+package com.employeeRecord.data.dto;
 
 
 import lombok.Data;
-
+import org.springframework.web.multipart.MultipartFile;
 
 
 @Data
 public class EmployeeDto {
     private String firstName;
     private String lastName;
-    private String gender;
-    private String  dateOfBirth;
     private Long salary;
     private String email;
-    private String phoneNumber;
-    private String address;
-    private String imageURL;
-
+    private String  dateOfBirth;
+    private MultipartFile image;
 }
 
