@@ -12,3 +12,35 @@ import java.sql.Connection;
 import java.sql.SQLException;
 
 import static org.assertj.core.api.Assertions.assertThat;
+
+@SpringBootTest
+@Slf4j
+class EmployeeRecordApplicationTests{
+
+    @Value ("${test.property.name}")
+    private String testName;
+
+    @Autowired
+    private DataSource dataSource;
+
+    @Test
+    void valueExists(){
+        assertThat(testName).isEqualTo("EmployeeRecord");
+        log.info(testName);
+    }
+
+    @Test
+    void applicationCanConnectToDatabaseTest(){
+        assertThat(dataSource).isNotNull();
+        Connection connection;
+        try {
+            connection = dataSource.getConnection();
+            assertThat(connection).isNotNull();
+            log.info("Connection -->{}", connection.getSchema());
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+}
